@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA8116DB1930AE1100A621DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8116DA1930AE1100A621DE /* Foundation.framework */; };
+		DA8116DD1930AE1100A621DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8116DC1930AE1100A621DE /* CoreGraphics.framework */; };
+		DA8116DF1930AE1100A621DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8116DE1930AE1100A621DE /* UIKit.framework */; };
+		DA8116E11930AE1100A621DE /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8116E01930AE1100A621DE /* SpriteKit.framework */; };
+		DA8116E71930AE1100A621DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA8116E51930AE1100A621DE /* InfoPlist.strings */; };
+		DA8116E91930AE1100A621DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8116E81930AE1100A621DE /* main.m */; };
+		DA8116ED1930AE1100A621DE /* SKBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8116EC1930AE1100A621DE /* SKBAppDelegate.m */; };
+		DA8116F01930AE1100A621DE /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8116EE1930AE1100A621DE /* Main_iPhone.storyboard */; };
+		DA8116F31930AE1100A621DE /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8116F11930AE1100A621DE /* Main_iPad.storyboard */; };
+		DA8116F61930AE1100A621DE /* SKBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8116F51930AE1100A621DE /* SKBViewController.m */; };
+		DA8116F91930AE1100A621DE /* SKBMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8116F81930AE1100A621DE /* SKBMyScene.m */; };
+		DA8116FB1930AE1100A621DE /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8116FA1930AE1100A621DE /* Spaceship.png */; };
+		DA8116FD1930AE1100A621DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8116FC1930AE1100A621DE /* Images.xcassets */; };
+		DA8117041930AE1100A621DE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8117031930AE1100A621DE /* XCTest.framework */; };
+		DA8117051930AE1100A621DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8116DA1930AE1100A621DE /* Foundation.framework */; };
+		DA8117061930AE1100A621DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8116DE1930AE1100A621DE /* UIKit.framework */; };
+		DA81170E1930AE1100A621DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA81170C1930AE1100A621DE /* InfoPlist.strings */; };
+		DA8117101930AE1100A621DE /* Sprite_Kit_BreakoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81170F1930AE1100A621DE /* Sprite_Kit_BreakoutTests.m */; };
+		DAB31C7C19373980004B809E /* app_game_interactive_alert_tone_026.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DAB31C7B19373980004B809E /* app_game_interactive_alert_tone_026.mp3 */; };
+		DAB31C7E19373989004B809E /* synth_stab.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DAB31C7D19373989004B809E /* synth_stab.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA8117071930AE1100A621DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA8116CF1930AE1100A621DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA8116D61930AE1100A621DE;
+			remoteInfo = "Sprite Kit Breakout";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA8116D71930AE1100A621DE /* Sprite Kit Breakout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sprite Kit Breakout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8116DA1930AE1100A621DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA8116DC1930AE1100A621DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DA8116DE1930AE1100A621DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DA8116E01930AE1100A621DE /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		DA8116E41930AE1100A621DE /* Sprite Kit Breakout-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sprite Kit Breakout-Info.plist"; sourceTree = "<group>"; };
+		DA8116E61930AE1100A621DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA8116E81930AE1100A621DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA8116EA1930AE1100A621DE /* Sprite Kit Breakout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sprite Kit Breakout-Prefix.pch"; sourceTree = "<group>"; };
+		DA8116EB1930AE1100A621DE /* SKBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKBAppDelegate.h; sourceTree = "<group>"; };
+		DA8116EC1930AE1100A621DE /* SKBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKBAppDelegate.m; sourceTree = "<group>"; };
+		DA8116EF1930AE1100A621DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		DA8116F21930AE1100A621DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		DA8116F41930AE1100A621DE /* SKBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKBViewController.h; sourceTree = "<group>"; };
+		DA8116F51930AE1100A621DE /* SKBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKBViewController.m; sourceTree = "<group>"; };
+		DA8116F71930AE1100A621DE /* SKBMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKBMyScene.h; sourceTree = "<group>"; };
+		DA8116F81930AE1100A621DE /* SKBMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKBMyScene.m; sourceTree = "<group>"; };
+		DA8116FA1930AE1100A621DE /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		DA8116FC1930AE1100A621DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DA8117021930AE1100A621DE /* Sprite Kit BreakoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sprite Kit BreakoutTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8117031930AE1100A621DE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DA81170B1930AE1100A621DE /* Sprite Kit BreakoutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sprite Kit BreakoutTests-Info.plist"; sourceTree = "<group>"; };
+		DA81170D1930AE1100A621DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA81170F1930AE1100A621DE /* Sprite_Kit_BreakoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sprite_Kit_BreakoutTests.m; sourceTree = "<group>"; };
+		DAB31C7B19373980004B809E /* app_game_interactive_alert_tone_026.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = app_game_interactive_alert_tone_026.mp3; sourceTree = "<group>"; };
+		DAB31C7D19373989004B809E /* synth_stab.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = synth_stab.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA8116D41930AE1100A621DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8116DD1930AE1100A621DE /* CoreGraphics.framework in Frameworks */,
+				DA8116DF1930AE1100A621DE /* UIKit.framework in Frameworks */,
+				DA8116E11930AE1100A621DE /* SpriteKit.framework in Frameworks */,
+				DA8116DB1930AE1100A621DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA8116FF1930AE1100A621DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8117041930AE1100A621DE /* XCTest.framework in Frameworks */,
+				DA8117061930AE1100A621DE /* UIKit.framework in Frameworks */,
+				DA8117051930AE1100A621DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA8116CE1930AE1100A621DE = {
+			isa = PBXGroup;
+			children = (
+				DA8116E21930AE1100A621DE /* Sprite Kit Breakout */,
+				DA8117091930AE1100A621DE /* Sprite Kit BreakoutTests */,
+				DA8116D91930AE1100A621DE /* Frameworks */,
+				DA8116D81930AE1100A621DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA8116D81930AE1100A621DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA8116D71930AE1100A621DE /* Sprite Kit Breakout.app */,
+				DA8117021930AE1100A621DE /* Sprite Kit BreakoutTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA8116D91930AE1100A621DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA8116DA1930AE1100A621DE /* Foundation.framework */,
+				DA8116DC1930AE1100A621DE /* CoreGraphics.framework */,
+				DA8116DE1930AE1100A621DE /* UIKit.framework */,
+				DA8116E01930AE1100A621DE /* SpriteKit.framework */,
+				DA8117031930AE1100A621DE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA8116E21930AE1100A621DE /* Sprite Kit Breakout */ = {
+			isa = PBXGroup;
+			children = (
+				DA8116EB1930AE1100A621DE /* SKBAppDelegate.h */,
+				DA8116EC1930AE1100A621DE /* SKBAppDelegate.m */,
+				DA8116EE1930AE1100A621DE /* Main_iPhone.storyboard */,
+				DA8116F11930AE1100A621DE /* Main_iPad.storyboard */,
+				DA8116F41930AE1100A621DE /* SKBViewController.h */,
+				DA8116F51930AE1100A621DE /* SKBViewController.m */,
+				DA8116F71930AE1100A621DE /* SKBMyScene.h */,
+				DA8116F81930AE1100A621DE /* SKBMyScene.m */,
+				DA8116FA1930AE1100A621DE /* Spaceship.png */,
+				DA8116FC1930AE1100A621DE /* Images.xcassets */,
+				DA8116E31930AE1100A621DE /* Supporting Files */,
+			);
+			path = "Sprite Kit Breakout";
+			sourceTree = "<group>";
+		};
+		DA8116E31930AE1100A621DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAB31C7B19373980004B809E /* app_game_interactive_alert_tone_026.mp3 */,
+				DAB31C7D19373989004B809E /* synth_stab.mp3 */,
+				DA8116E41930AE1100A621DE /* Sprite Kit Breakout-Info.plist */,
+				DA8116E51930AE1100A621DE /* InfoPlist.strings */,
+				DA8116E81930AE1100A621DE /* main.m */,
+				DA8116EA1930AE1100A621DE /* Sprite Kit Breakout-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA8117091930AE1100A621DE /* Sprite Kit BreakoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA81170F1930AE1100A621DE /* Sprite_Kit_BreakoutTests.m */,
+				DA81170A1930AE1100A621DE /* Supporting Files */,
+			);
+			path = "Sprite Kit BreakoutTests";
+			sourceTree = "<group>";
+		};
+		DA81170A1930AE1100A621DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA81170B1930AE1100A621DE /* Sprite Kit BreakoutTests-Info.plist */,
+				DA81170C1930AE1100A621DE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA8116D61930AE1100A621DE /* Sprite Kit Breakout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA8117131930AE1100A621DE /* Build configuration list for PBXNativeTarget "Sprite Kit Breakout" */;
+			buildPhases = (
+				DA8116D31930AE1100A621DE /* Sources */,
+				DA8116D41930AE1100A621DE /* Frameworks */,
+				DA8116D51930AE1100A621DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sprite Kit Breakout";
+			productName = "Sprite Kit Breakout";
+			productReference = DA8116D71930AE1100A621DE /* Sprite Kit Breakout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA8117011930AE1100A621DE /* Sprite Kit BreakoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA8117161930AE1100A621DE /* Build configuration list for PBXNativeTarget "Sprite Kit BreakoutTests" */;
+			buildPhases = (
+				DA8116FE1930AE1100A621DE /* Sources */,
+				DA8116FF1930AE1100A621DE /* Frameworks */,
+				DA8117001930AE1100A621DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA8117081930AE1100A621DE /* PBXTargetDependency */,
+			);
+			name = "Sprite Kit BreakoutTests";
+			productName = "Sprite Kit BreakoutTests";
+			productReference = DA8117021930AE1100A621DE /* Sprite Kit BreakoutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA8116CF1930AE1100A621DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SKB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Božidar Ševo";
+				TargetAttributes = {
+					DA8117011930AE1100A621DE = {
+						TestTargetID = DA8116D61930AE1100A621DE;
+					};
+				};
+			};
+			buildConfigurationList = DA8116D21930AE1100A621DE /* Build configuration list for PBXProject "Sprite Kit Breakout" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA8116CE1930AE1100A621DE;
+			productRefGroup = DA8116D81930AE1100A621DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA8116D61930AE1100A621DE /* Sprite Kit Breakout */,
+				DA8117011930AE1100A621DE /* Sprite Kit BreakoutTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA8116D51930AE1100A621DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8116FB1930AE1100A621DE /* Spaceship.png in Resources */,
+				DAB31C7E19373989004B809E /* synth_stab.mp3 in Resources */,
+				DAB31C7C19373980004B809E /* app_game_interactive_alert_tone_026.mp3 in Resources */,
+				DA8116FD1930AE1100A621DE /* Images.xcassets in Resources */,
+				DA8116F31930AE1100A621DE /* Main_iPad.storyboard in Resources */,
+				DA8116F01930AE1100A621DE /* Main_iPhone.storyboard in Resources */,
+				DA8116E71930AE1100A621DE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA8117001930AE1100A621DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA81170E1930AE1100A621DE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA8116D31930AE1100A621DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8116E91930AE1100A621DE /* main.m in Sources */,
+				DA8116ED1930AE1100A621DE /* SKBAppDelegate.m in Sources */,
+				DA8116F61930AE1100A621DE /* SKBViewController.m in Sources */,
+				DA8116F91930AE1100A621DE /* SKBMyScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA8116FE1930AE1100A621DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8117101930AE1100A621DE /* Sprite_Kit_BreakoutTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA8117081930AE1100A621DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA8116D61930AE1100A621DE /* Sprite Kit Breakout */;
+			targetProxy = DA8117071930AE1100A621DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA8116E51930AE1100A621DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA8116E61930AE1100A621DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DA8116EE1930AE1100A621DE /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA8116EF1930AE1100A621DE /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		DA8116F11930AE1100A621DE /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA8116F21930AE1100A621DE /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		DA81170C1930AE1100A621DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA81170D1930AE1100A621DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA8117111930AE1100A621DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA8117121930AE1100A621DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA8117141930AE1100A621DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sprite Kit Breakout/Sprite Kit Breakout-Prefix.pch";
+				INFOPLIST_FILE = "Sprite Kit Breakout/Sprite Kit Breakout-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DA8117151930AE1100A621DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sprite Kit Breakout/Sprite Kit Breakout-Prefix.pch";
+				INFOPLIST_FILE = "Sprite Kit Breakout/Sprite Kit Breakout-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DA8117171930AE1100A621DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sprite Kit Breakout.app/Sprite Kit Breakout";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sprite Kit Breakout/Sprite Kit Breakout-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Sprite Kit BreakoutTests/Sprite Kit BreakoutTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DA8117181930AE1100A621DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sprite Kit Breakout.app/Sprite Kit Breakout";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sprite Kit Breakout/Sprite Kit Breakout-Prefix.pch";
+				INFOPLIST_FILE = "Sprite Kit BreakoutTests/Sprite Kit BreakoutTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA8116D21930AE1100A621DE /* Build configuration list for PBXProject "Sprite Kit Breakout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8117111930AE1100A621DE /* Debug */,
+				DA8117121930AE1100A621DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA8117131930AE1100A621DE /* Build configuration list for PBXNativeTarget "Sprite Kit Breakout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8117141930AE1100A621DE /* Debug */,
+				DA8117151930AE1100A621DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA8117161930AE1100A621DE /* Build configuration list for PBXNativeTarget "Sprite Kit BreakoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8117171930AE1100A621DE /* Debug */,
+				DA8117181930AE1100A621DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA8116CF1930AE1100A621DE /* Project object */;
+}
